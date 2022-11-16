@@ -7,7 +7,7 @@ describe('error handling', () => {
     expect(resp.status).toBe(418);
     expect(resp.body.message).toBe('I am a teapot');
   });
-  it.skip('/error/payment should return a 402', async () => {
+  it('/error/payment should return a 402', async () => {
     const resp = await request(app).get('/error/payment');
     expect(resp.status).toBe(402);
   });
